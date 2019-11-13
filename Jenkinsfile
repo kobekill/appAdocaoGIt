@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac HelloWorld.java && java HelloWorld'
+                sh 'mvn -B -DskipTest clean package'
             }
         }
        
