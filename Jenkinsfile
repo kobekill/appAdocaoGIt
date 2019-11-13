@@ -11,9 +11,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTest clean package'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
-       
+        stage('Results'){
+            steps{
+                script{
+                  def logz = currentBuild.rawBuild.getLog(1000);
+                  def result = logz.Find{it.contains('FAIL');
+                  if(result){
+                    error('FAILING TO DUE' + result)  
+                  }
+            }
+        }       
     }
 }
