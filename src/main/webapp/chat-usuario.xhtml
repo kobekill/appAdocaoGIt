@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<ui:composition template="/WEB-INF/template/layout-padrao.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" xmlns:o="http://omnifaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+
+
+	<ui:define name="corpo">
+
+
+		<h:form id="formulario"
+			style="position:absolute; text-align:center; width: 100%">
+			<f:metadata>
+				<f:viewAction />
+			</f:metadata>
+
+			<p:messages closable="true" showSummary="false" showDetail="true">
+				<p:autoUpdate />
+			</p:messages>
+
+			<h1 style="color: blue; text-align: center">Chat (Conversas
+				abertas pelo usuário)</h1>
+
+			<h:graphicImage library="imagens" name="Chat4.png" />
+
+
+
+		</h:form>
+	</ui:define>
+
+</ui:composition>
