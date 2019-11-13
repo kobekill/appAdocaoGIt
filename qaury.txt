@@ -1,0 +1,4 @@
+SELECT a.* , r.nome , p.nome , p.telefone , u.login FROM  animal a 
+ left join raca r on a.raca_id = r.id
+left join pessoa p on a.pessoa_id = p.id 
+ left join usuario u on p.usuario_id = u.id;
