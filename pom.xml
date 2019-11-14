@@ -10,7 +10,7 @@
 
 	<name>adocao</name>
 	<url>http://maven.apache.org</url>
-	<url>https://github.com/kobekill/appAdocaoGIt.git</url>
+	<url>https://github.com/kobekill/appAdocaoGIt</url>
 
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
